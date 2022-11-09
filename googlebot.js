@@ -13,6 +13,7 @@ let btnK = document.getElementsByName("btnK")[0];
 let keywords = ["10 самых популярных шрифтов от Google", "Отключение редакций и ревизий в WordPress", "Вывод произвольных типов записей и полей в WordPress"];
 let keyword = keywords[getRandom(0, keywords.length)];
 if (btnK !== undefined) {
+     document.getElementsByName("q")[0].value = keyword;
     btnK.click();
 } else {
     for(let i = 0; i < links.length; i++) {
